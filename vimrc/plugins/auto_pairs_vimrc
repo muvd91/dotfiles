@@ -1,0 +1,4 @@
+Plug 'jiangmiao/auto-pairs'
+
+" Fly-mode enabled
+" let g:AutoPairsFlyMode = 1

@@ -1,0 +1,14 @@
+bin/
+target/
+build/
+lib/
+lib64/
+venv/
+__pycache__/
+
+*.class
+*.swp
+*.git
+*.o
+*.pyc
+*.out

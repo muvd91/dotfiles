@@ -1,0 +1,9 @@
+" Colorscheme onehalf
+
+
+syntax enable
+if $BACKGROUND == 'light' || has("gui_running")
+  colorscheme onehalflight
+elseif $BACKGROUND == 'dark'
+  colorscheme onehalfdark
+endif

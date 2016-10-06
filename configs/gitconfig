@@ -1,0 +1,10 @@
+[user]
+	email = david.muv91@gmail.com
+	name = David Munoz
+[core]
+	editor = vim
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	lg = log --oneline

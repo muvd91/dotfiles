@@ -1,0 +1,46 @@
+#!/bin/bash
+
+# User specific environment
+export INSTALL_DIR=/usr/local/software
+export INSTALL_BIN=$INSTALL_DIR/bin
+export LOMBOK_PATH=~/bin/lombok.jar
+export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+export JAVA_HOME=/usr/java/jdk-11.0.6
+
+export HISTCONTROL=ignoredups
+
+alias vim=vimx
+alias vim_light="echo light > ~/._background"
+alias vim_dark="echo dark > ~/._background"
+
+# Backgroun env var for vim
+if [[ -a ~/._background ]]; then
+  export BACKGROUND=$(cat ~/._background)
+else
+  export BACKGROUND=dark
+fi
+
+if [[ "$BACKGROUND" == 'light' ]]; then
+  export LS_COLORS=${LS_COLORS}:'ln=7;35'
+fi
+
+alias watch="watch "
+
+# Custom aliases
+# Kubernetes
+alias kapp="kubectl apply -f"
+alias kgp="kubectl get pods"
+alias kdel="kubectl delete"
+alias kds="kubectl delete service"
+alias kdd="kubectl delete deployment"
+alias kl="kubectl logs"
+alias klf="kubectl logs -f"
+alias kdesp="kubectl describe pod"
+alias kdesd="kubectl describe deployment"
+alias kdess="kubectl describe service"
+
+
+#
+# Not to be disturbed by Ctrl-S ctrl-Q in terminals:
+stty -ixon
+

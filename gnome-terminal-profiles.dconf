@@ -1,0 +1,20 @@
+[/]
+default='9f21beea-4b7c-493b-9965-fadc85acdffd'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '9f21beea-4b7c-493b-9965-fadc85acdffd']
+
+[:9f21beea-4b7c-493b-9965-fadc85acdffd]
+background-color='rgb(42,42,49)'
+font='Liberation Mono for Powerline 13'
+foreground-color='rgb(255,255,255)'
+palette=['rgb(0,0,0)', 'rgb(241,82,82)', 'rgb(0,205,0)', 'rgb(205,205,0)', 'rgb(168,168,244)', 'rgb(205,0,205)', 'rgb(153,240,240)', 'rgb(250,235,215)', 'rgb(64,64,64)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(255,255,0)', 'rgb(0,0,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
+use-system-font=false
+use-theme-colors=false
+visible-name='Dark'
+
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(235,235,235)'
+font='Liberation Mono for Powerline Bold 10'
+foreground-color='rgb(46,52,54)'
+use-system-font=false
+use-theme-colors=false
+visible-name='Light'

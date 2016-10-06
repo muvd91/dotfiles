@@ -1,0 +1,22 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'vim-latex/vim-latex'
+source ~/data/dotfiles/vimrc/plugins/ctrlp_vimrc
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'Yggdroot/duoduo'
+
+" Initialize plugin system
+call plug#end()
+
+source ~/data/dotfiles/vimrc/plugins/default_vimrc
+source ~/data/dotfiles/vimrc/colorschemes/duoduo_papercolor_vimrc
+
+" LaTex settings begin
+
+" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
+" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+" The following changes the default filetype back to 'tex':
+let g:tex_flavor='latex'
+

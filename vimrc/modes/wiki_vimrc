@@ -1,0 +1,19 @@
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'vimwiki/vimwiki'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'Yggdroot/duoduo'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
+
+" Initialize plugin system
+call plug#end()
+
+source ~/data/dotfiles/vimrc/plugins/vim_wiki_vimrc
+source ~/data/dotfiles/vimrc/plugins/default_vimrc
+source ~/data/dotfiles/vimrc/colorschemes/duoduo_papercolor_vimrc
+
+
