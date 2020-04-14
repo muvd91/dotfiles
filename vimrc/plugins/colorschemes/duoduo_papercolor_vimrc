@@ -1,12 +1,15 @@
-
 " Colorscheme
+
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'Yggdroot/duoduo'
+
 set guifont=Liberation\ Mono\ for\ Powerline\ Bold
 
 syntax enable
 if $BACKGROUND == 'light' || has("gui_running")
   " Do PaperColor
   set background=light
-  colorscheme PaperColor
+  let g:colors_name = "PaperColor"
   " Vim-airline theme
   let g:airline_theme='papercolor'
   " Search color
@@ -17,7 +20,7 @@ if $BACKGROUND == 'light' || has("gui_running")
 elseif $BACKGROUND == 'dark'
   " Do duoduo
   set background=dark
-  colorscheme duoduo
+  let g:colors_name = "duoduo"
   " Visual highlight color
   highlight Visual cterm=bold ctermbg=19 ctermfg=White
   " Highlight trailing spaces

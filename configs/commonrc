@@ -40,6 +40,13 @@ alias kdesd="kubectl describe deployment"
 alias kdess="kubectl describe service"
 
 
+function _install_nvm() {
+  # NVM settings
+  export NVM_DIR="$HOME/.config/nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+}
+
 #
 # Not to be disturbed by Ctrl-S ctrl-Q in terminals:
 stty -ixon

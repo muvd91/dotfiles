@@ -1,3 +1,10 @@
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+" Load Plugin with configurations
+command! -nargs=1 PlugModule exec "source ~/data/dotfiles/vimrc/plugins/" . <args> . "_vimrc"
+
 set backspace=eol,indent,start
 set nocompatible
 
@@ -29,6 +36,7 @@ source ~/data/dotfiles/vimrc/vanilla/functions_vimrc
 " Mappings
 inoremap kj <Esc>
 inoremap kJ <Esc>gUiwea
+nnoremap <leader>w :write<CR>
 nnoremap <leader>e :edit **/
 nnoremap <leader>cd :cd 
 nnoremap <leader>d :bp\|bd #<CR>

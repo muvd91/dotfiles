@@ -1,22 +1,38 @@
+source ~/data/dotfiles/vimrc/plugins/default_vimrc
+
+" Specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+
+" Download and install automatically
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
 
-Plug 'vim-latex/vim-latex'
-source ~/data/dotfiles/vimrc/plugins/ctrlp_vimrc
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-unimpaired'
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'Yggdroot/duoduo'
+Plug        'airblade/vim-gitgutter'
+Plug        'tpope/vim-fugitive'
+Plug        'tpope/vim-sleuth'
+Plug        'tpope/vim-surround'
+Plug        'tpope/vim-unimpaired'
+Plug        'tpope/vim-commentary'
+Plug        'tpope/vim-repeat'
+PlugModule  'delimitMate'
+PlugModule  'tagbar'
+PlugModule  'vimtex'
+PlugModule  'nerdtree'
+PlugModule  'ctrlp'
+PlugModule  'vim-airline'
+PlugModule  'ultisnips'
+PlugModule  'YouCompleteMe'
 
+PlugModule  'colorschemes/vim-one'
 " Initialize plugin system
 call plug#end()
 
-source ~/data/dotfiles/vimrc/plugins/default_vimrc
-source ~/data/dotfiles/vimrc/colorschemes/duoduo_papercolor_vimrc
+exec "colorscheme " . g:colors_name
 
-" LaTex settings begin
-
-" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
-" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
-" The following changes the default filetype back to 'tex':
-let g:tex_flavor='latex'
 

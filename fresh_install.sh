@@ -144,6 +144,7 @@ sudo dnf -y install docker-ce docker-ce-cli containerd.io
 # Zathura
 sudo dnf install -y zathura
 sudo dnf install -y zathura-pdf-mupdf
+sudo dnf install -y xdotool
 
 # i3 Configuration
 sudo dnf install -y i3 i3status dmenu i3lock xbacklight feh conky
