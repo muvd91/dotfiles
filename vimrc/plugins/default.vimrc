@@ -3,7 +3,7 @@ if (has("termguicolors"))
 endif
 
 " Load Plugin with configurations
-command! -nargs=1 PlugModule exec "source ~/data/dotfiles/vimrc/plugins/" . <args> . "_vimrc"
+command! -nargs=1 PlugModule exec "source ~/data/dotfiles/vimrc/plugins/" . <args> . ".vimrc"
 
 set backspace=eol,indent,start
 set nocompatible
@@ -31,7 +31,7 @@ set smartcase
 set updatetime=1000
 
 " Import utilities
-source ~/data/dotfiles/vimrc/vanilla/functions_vimrc
+source ~/data/dotfiles/vimrc/vanilla/functions.vimrc
 
 " Mappings
 inoremap kj <Esc>
