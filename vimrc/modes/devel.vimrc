@@ -21,6 +21,7 @@ Plug        'tpope/vim-unimpaired'
 Plug        'tpope/vim-commentary'
 Plug        'tpope/vim-markdown'
 Plug        'tpope/vim-repeat'
+PlugModule  'delimitMate'
 PlugModule  'tagbar'
 PlugModule  'nerdtree'
 PlugModule  'plantuml-syntax'
@@ -35,4 +36,5 @@ PlugModule  'colorschemes/vim-one'
 call plug#end()
 
 exec "colorscheme " . g:colors_name
+
 

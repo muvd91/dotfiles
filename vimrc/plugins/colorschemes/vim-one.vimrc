@@ -21,5 +21,13 @@ if $BACKGROUND == 'light' || has("gui_running")
   set background=light
 elseif $BACKGROUND == 'dark'
   set background=dark
+  autocmd FileType tex call CustomColors()
 endif
+
+function CustomColors()
+  highlight ExtraWhitespace guifg=#6a768a
+  highlight Conceal guifg=#bcd4e6
+  match ExtraWhitespace /\s\+$/
+endfunction
+
 
