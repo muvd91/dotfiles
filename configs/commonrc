@@ -1,14 +1,5 @@
 #!/bin/bash
 
-# User specific environment
-export INSTALL_DIR=/usr/local/software
-export INSTALL_BIN=$INSTALL_DIR/bin
-export LOMBOK_PATH=~/bin/lombok.jar
-export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-export JAVA_HOME=/usr/java/jdk-11.0.6
-
-export HISTCONTROL=ignoredups
-
 alias vim=vimx
 alias vim_light="echo light > ~/._background"
 alias vim_dark="echo dark > ~/._background"
