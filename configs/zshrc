@@ -69,6 +69,13 @@ source $ZSH/oh-my-zsh.sh
 # FZF functions
 source ~/.fzffn
 
+# History control
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_EXPIRE_DUPS_FIRST
+
 # Use vim cli mode
 bindkey -v
 
