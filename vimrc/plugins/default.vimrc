@@ -2,9 +2,6 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-" Load Plugin with configurations
-command! -nargs=1 PlugModule exec "source ~/data/dotfiles/vimrc/plugins/" . <args> . ".vimrc"
-
 set backspace=eol,indent,start
 set nocompatible
 

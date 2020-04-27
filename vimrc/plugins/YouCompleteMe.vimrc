@@ -1,4 +1,3 @@
-Plug 'Valloric/YouCompleteMe'
 
 " To add a new completer to YCM installation, re-run install.py.
 " to avoid recompiling YCM, use --skip-build and --no-regex.

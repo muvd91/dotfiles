@@ -1,4 +1,3 @@
-Plug 'takac/vim-hardtime'
 
 " Vim Hardtime
 let g:hardtime_default_on = 0

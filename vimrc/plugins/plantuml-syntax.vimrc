@@ -1,4 +1,3 @@
-Plug 'aklt/plantuml-syntax'
 
 function PlantUml()
     let img = expand('%:r') . ".png"

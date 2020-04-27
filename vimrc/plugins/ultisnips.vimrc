@@ -1,5 +1,3 @@
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
 

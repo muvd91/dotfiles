@@ -1,4 +1,3 @@
-Plug 'vimwiki/vimwiki'
 
 set nocompatible
 filetype plugin on

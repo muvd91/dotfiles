@@ -1,3 +1,4 @@
+source ~/data/dotfiles/vimrc/plugins/plugg.vimrc
 source ~/data/dotfiles/vimrc/plugins/default.vimrc
 
 " Specify a directory for plugins
@@ -12,15 +13,15 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
+Plugg  'rakr/vim-one', {'config': 'colorschemes/vim-one.vimrc'}
 
-Plug        'jiangmiao/auto-pairs'
-Plug        'tpope/vim-surround'
-Plug        'tpope/vim-unimpaired'
-PlugModule  'vimwiki'
-PlugModule  'vim-airline'
-
-PlugModule  'colorschemes/vim-one'
+Plugg  'vimwiki/vimwiki', {'config': 'vimwiki.vimrc'}
+Plugg  'tpope/vim-surround'
+Plugg  'tpope/vim-unimpaired'
+Plugg  'Raimondi/delimitMate', {'config': 'delimitMate.vimrc'}
+Plugg  'vim-airline/vim-airline', {'config': 'vim-airline.vimrc'}
+Plugg  'vim-airline/vim-airline-themes'
 " Initialize plugin system
 call plug#end()
+doautocmd User PlugFinished
 
-exec "colorscheme " . g:colors_name

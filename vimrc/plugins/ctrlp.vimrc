@@ -1,4 +1,3 @@
-Plug 'ctrlpvim/ctrlp.vim'
 
 " Ctrl-P - Ignore list. (Does not apply if ag is used)
 let g:ctrlp_custom_ignore = 'git|lib'
