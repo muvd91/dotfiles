@@ -1,8 +1,11 @@
+
 set nocompatible
 set backspace=eol,indent,start
 set number
 set relativenumber
 set scrolloff=10
+set clipboard=unnamedplus
+filetype on
 
 set colorcolumn=110
 highlight ColorColumn ctermbg=darkgray
@@ -15,14 +18,16 @@ let mapleader="\<SPACE>"
 syntax enable
 colorscheme peachpuff
 
+autocmd FileType make set noexpandtab
 
-"set listchars=trail:·,tab:>·
-"set list
+
+set listchars=trail:·,tab:>·
+set list
 "
 "" Common settings
-"set tabstop=2
-"set expandtab
-"set shiftwidth=2
+set tabstop=4
+set expandtab
+set shiftwidth=4
 "set smartindent
 "
 "set laststatus=2
@@ -40,21 +45,22 @@ colorscheme peachpuff
 "
 "" Mappings
 inoremap kj <Esc>
-"inoremap kJ <Esc>gUiwea
-"nnoremap <leader>e :edit **/
-"nnoremap <leader>cd :cd 
+inoremap kJ <Esc>gUiwea
+nnoremap <leader>e :edit **/
+nnoremap <leader>cd :cd 
+nnoremap <leader>n :nohlsearch<CR>
+nnoremap [q :cnext<CR>
+nnoremap ]q :cprevious<CR>
+nnoremap [b :bnext<CR>
+nnoremap ]b :bprevious<CR>
+nnoremap <TAB> <C-w>w
+nnoremap <leader>S :%s/
 "nnoremap <leader>d :bp\|bd #<CR>
-"nnoremap <TAB> <C-w>w
 "nnoremap <leader>l :ls<CR>:b<Space>
-"nnoremap [b :bnext<CR>
-"nnoremap ]b :bprevious<CR>
-"nnoremap <leader>S :%s/
 "nnoremap <leader>su :s/
 "nnoremap <leader>sh :!
-nnoremap <leader>n :nohlsearch<CR>
 "
-"nnoremap <leader>tn :call ToggleNumber()<CR>
-"
+
 "tnoremap <ESC> <C-W>N
 "tnoremap kj <C-W>N
 "
@@ -72,7 +78,6 @@ nnoremap <leader>n :nohlsearch<CR>
 "set completeopt=longest,menuone
 "
 "" If compiled with clipboard or using gVim
-"set clipboard=unnamedplus
 "
 "" Apparently syntax highlighting will stop working if it exceeds 'redraw' time
 "" setting. This forces to highlight from the beginning when a buffer is
