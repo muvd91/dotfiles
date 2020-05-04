@@ -7,7 +7,7 @@ let g:tex_flavor = 'latex'
 let g:vimtex_view_method = 'zathura'
 
 set conceallevel=1
-set textwidth=110
+set textwidth=100
 
 highlight ExtraWhitespace guifg=#6a768a
 highlight Conceal guifg=#bcd4e6

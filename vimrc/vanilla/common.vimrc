@@ -9,7 +9,8 @@ set scrolloff=10
 set clipboard=unnamedplus
 syntax enable
 filetype on
-set colorcolumn=110
+set colorcolumn=100
+set textwidth=100
 set laststatus=2
 " Search settings
 set incsearch
