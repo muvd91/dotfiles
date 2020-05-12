@@ -9,9 +9,9 @@ set scrolloff=10
 set clipboard=unnamedplus
 syntax enable
 filetype on
-set colorcolumn=100
 set textwidth=100
 set laststatus=2
+set ruler
 " Search settings
 set incsearch
 set hlsearch
@@ -28,7 +28,6 @@ set list
 
 set wildmenu
 
-highlight ColorColumn ctermbg=10
 highlight Search ctermfg=255 ctermbg=8
 highlight IncSearch ctermfg=255 ctermbg=8 cterm=bold
 highlight StatusLine ctermbg=255 ctermfg=10
@@ -38,12 +37,15 @@ highlight Visual ctermfg=10 ctermbg=255
 autocmd FileType make set noexpandtab
 autocmd FileType c set errorformat=%f:%l:%c:%m,%-G%.%#
 autocmd FileType c set path+=**
+autocmd Filetype c set colorcolumn=100
+autocmd Filetype c highlight ColorColumn ctermbg=10
 
-"" Mappings
+" Mappings
 let mapleader="\<SPACE>"
 inoremap kj <Esc>
 inoremap kJ <Esc>gUiwea
 nnoremap <leader>e :edit **/
+nnoremap <leader>w :write<CR>
 nnoremap <leader>cd :cd 
 nnoremap <leader>n :nohlsearch<CR>
 nnoremap ]q :cnext<CR>
@@ -55,12 +57,13 @@ nnoremap <leader>S :%s/
 nnoremap <leader>d :bp\|bd #<CR>
 nnoremap <leader>l :ls<CR>:b<Space>
 nnoremap <leader>su :s/
-"
 
-"tnoremap <ESC> <C-W>N
-"tnoremap kj <C-W>N
-"
-"
+" Terminal mappings
+tnoremap <ESC> <C-W>N
+tnoremap kj <C-W>N
+
+
+
 "" Autocomplete settings - Supertab is present
 "inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 "inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
@@ -72,9 +75,3 @@ nnoremap <leader>su :s/
 "
 "set completeopt=longest,menuone
 "
-"" If compiled with clipboard or using gVim
-"
-"" Apparently syntax highlighting will stop working if it exceeds 'redraw' time
-"" setting. This forces to highlight from the beginning when a buffer is
-"" entered.
-"autocmd BufEnter * :syntax sync fromstart
