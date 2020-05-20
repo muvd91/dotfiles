@@ -44,7 +44,6 @@ autocmd Filetype c highlight ColorColumn ctermbg=10
 let mapleader="\<SPACE>"
 inoremap kj <Esc>
 inoremap kJ <Esc>gUiwea
-nnoremap <leader>e :edit **/
 nnoremap <leader>w :write<CR>
 nnoremap <leader>cd :cd 
 nnoremap <leader>n :nohlsearch<CR>
@@ -57,6 +56,7 @@ nnoremap <leader>S :%s/
 nnoremap <leader>d :bp\|bd #<CR>
 nnoremap <leader>l :ls<CR>:b<Space>
 nnoremap <leader>su :s/
+nnoremap <C-p> :edit **/
 
 " Terminal mappings
 tnoremap <ESC> <C-W>N
