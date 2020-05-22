@@ -276,5 +276,5 @@ assign [class="Postman"] $ws5
 assign [class="Oracle SQL Developer"] $ws6
 assign [class="Thunderbird"] $ws7
 assign [class="zoom"] $ws8
-assign [class="Spotify"] $ws9
+for_window [class="Spotify"] move to workspace $ws9
 

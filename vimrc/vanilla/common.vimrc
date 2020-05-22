@@ -62,11 +62,9 @@ nnoremap <C-p> :edit **/
 tnoremap <ESC> <C-W>N
 tnoremap kj <C-W>N
 
-
-
-"" Autocomplete settings - Supertab is present
-"inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-"inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "<C-k>"
+inoremap <C-j> <C-n>
 "
 "set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*/target/*
 "
