@@ -23,8 +23,8 @@ Plugg  'tpope/vim-unimpaired'
 Plugg  'tpope/vim-commentary'
 Plugg  'tpope/vim-markdown'
 Plugg  'tpope/vim-repeat'
+Plugg  'aklt/plantuml-syntax', {'config': 'plantuml.vimrc'}
 Plugg  'Raimondi/delimitMate', {'config': 'delimitMate.vimrc'}
-Plugg  'majutsushi/tagbar', {'config': 'tagbar.vimrc'}
 Plugg  'scrooloose/nerdtree', {'config': 'nerdtree.vimrc'}
 Plugg  'ctrlpvim/ctrlp.vim', {'config': 'ctrlp.vimrc'}
 Plugg  'vim-airline/vim-airline', {'config': 'vim-airline.vimrc'}
