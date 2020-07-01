@@ -1,6 +1,13 @@
 #!/bin/bash
 
 alias vim=vimx
+alias vimv="vimx -u ~/data/dotfiles/vimrc/vanilla/common.vimrc"
+alias vimuml="vimx -u ~/data/dotfiles/vimrc/modes/plantuml.vimrc"
+alias vimlatex="vimx -u ~/data/dotfiles/vimrc/modes/latex.vimrc"
+alias notes="vimx -u ~/data/dotfiles/vimrc/modes/wiki.vimrc"
+alias vimmd="vimx -u ~/data/dotfiles/vimrc/modes/markdown.vimrc"
+alias ronotes="vimx -R -u ~/data/dotfiles/vimrc/modes/wiki.vimrc"
+
 alias vim_light="echo light > ~/._background"
 alias vim_dark="echo dark > ~/._background"
 
