@@ -1,7 +1,7 @@
-let s:plantuml_exec = "/home/dave/bin/plantuml.jar"
+let s:plantuml_exec = "~/bin/plantuml.jar"
 let s:plantuml_opts = "-Sdpi=300"
 
-let s:plantuml_cmd = ['java', '-jar', s:plantuml_exec, s:plantuml_opts, expand('%:p')]
+let s:plantuml_cmd = ['java', '-jar', expand(s:plantuml_exec), s:plantuml_opts, expand('%:p')]
 
 function CompileShow()
     let job = job_start(s:plantuml_cmd, {'close_cb': 'ShowDiagram'})
