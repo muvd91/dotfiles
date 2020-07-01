@@ -14,10 +14,13 @@ function HandlePlugg(repo, ...)
   endif
 
   let options = a:1
-  let config = options['config']
+  if has_key(options, 'config')
+    let config = options['config']
+    call add(g:config_files, config)
+  endif
+  "
   " echom "Plugin " . a:repo . " found with config file " . config
 
-  call add(g:config_files, config)
   Plug a:repo, options
 
 endfunction
