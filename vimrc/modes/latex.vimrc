@@ -32,7 +32,7 @@ Plugg  'vim-airline/vim-airline', {'config': 'vim-airline.vimrc'}
 Plugg  'vim-airline/vim-airline-themes'
 Plugg  'SirVer/ultisnips', {'config': 'ultisnips.vimrc'}
 Plugg  'honza/vim-snippets'
-Plugg  'Valloric/YouCompleteMe', {'config': 'YouCompleteMe.vimrc'}
+Plugg  'ycm-core/YouCompleteMe', {'config': 'YouCompleteMe.vimrc'}
 
 " Initialize plugin system
 call plug#end()
