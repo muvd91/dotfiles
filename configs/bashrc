@@ -12,6 +12,7 @@ fi
 # User specific aliases and functions
 
 source ~/.commonrc
+source ~/.environment
 
 
 

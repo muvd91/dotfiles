@@ -76,6 +76,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 # Config files
 cd
 ln -sf $HOME/data/dotfiles/configs/profile .profile
+ln -sf $HOME/data/dotfiles/configs/environment .environment
 ln -sf $HOME/data/dotfiles/configs/fzffn.sh .fzffn
 ln -sf $HOME/data/dotfiles/configs/gitconfig .gitconfig
 ln -sf $HOME/data/dotfiles/configs/bashrc .bashrc

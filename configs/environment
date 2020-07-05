@@ -1,0 +1,9 @@
+
+export INSTALL_DIR=/usr/local/software
+export INSTALL_BIN=$INSTALL_DIR/bin
+export LOMBOK_PATH=~/bin/lombok.jar
+export JAVA_HOME=/usr/lib/jvm/java-openjdk
+export HISTCONTROL=ignoredups:erasedups
+
+export PATH="$HOME/.local/bin:$HOME/bin:/usr/local/software/bin:$JAVA_HOME/bin:$PATH"
+
