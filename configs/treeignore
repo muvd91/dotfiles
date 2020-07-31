@@ -1,1 +1,1 @@
-*.pyc|__pycache__|*.o|*.class|lib|lib64|venv
+*.pyc|__pycache__|*.o|*.class|lib|lib64|venv|target|classes
