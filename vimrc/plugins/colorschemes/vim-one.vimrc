@@ -18,5 +18,8 @@ elseif $BACKGROUND == 'dark'
   set background=dark
 endif
 
+highlight ExtraWhitespace ctermfg=245  ctermbg=none
+match ExtraWhitespace /\s\+$/
+
 
 
