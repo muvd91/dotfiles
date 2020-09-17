@@ -8,7 +8,6 @@ alias notes="vimx -u ~/data/dotfiles/vimrc/modes/wiki.vimrc"
 alias vimmd="vimx -u ~/data/dotfiles/vimrc/modes/markdown.vimrc"
 alias vimpy="vimx -u ~/data/dotfiles/vimrc/modes/scratchpad_py.vimrc \`mktemp\`.py"
 alias vimkts="vimx -u ~/data/dotfiles/vimrc/modes/scratchpad_kts.vimrc \`mktemp -u\`.kts"
-alias vimkt="vimx -u ~/data/dotfiles/vimrc/modes/scratchpad_kt.vimrc \`mktemp -u\`.kt"
 alias ronotes="vimx -R -u ~/data/dotfiles/vimrc/modes/wiki.vimrc"
 
 alias vim_light="echo light > ~/._background"
