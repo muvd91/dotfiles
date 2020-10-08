@@ -39,3 +39,5 @@ Plugg  'ycm-core/YouCompleteMe', {'config': 'YouCompleteMe.vimrc'}
 call plug#end()
 doautocmd User PlugFinished
 
+source ~/data/dotfiles/vimrc/plugins/file-exec.vimrc
+
