@@ -33,6 +33,7 @@ Plugg  'takac/vim-hardtime', {'config': 'vim-hardtime.vimrc'}
 Plugg  'SirVer/ultisnips', {'config': 'ultisnips.vimrc'}
 Plugg  'honza/vim-snippets'
 Plugg  'vim-syntastic/syntastic', {'config': 'syntastic.vimrc'}
+Plugg  'jpalardy/vim-slime', {'config': 'vim-slime.vimrc'}
 Plugg  'ycm-core/YouCompleteMe', {'config': 'YouCompleteMe.vimrc'}
 
 " Initialize plugin system
