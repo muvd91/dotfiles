@@ -14,6 +14,7 @@ sudo dnf -y install \
 THEMES=~/local/fonts-and-themes
 FONTS_DIR=~/.local/share/fonts
 mkdir -p $THEMES
+mkdir -p $FONTS_DIR
 cd $THEMES
 wget --show-progress -O ./iosveka.zip https://github.com/be5invis/Iosevka/releases/download/v3.0.0-rc.5/01-iosevka-3.0.0-rc.5.zip
 wget --show-progress -O ./iosveka-term.zip https://github.com/be5invis/Iosevka/releases/download/v3.0.0-rc.5/03-iosevka-term-3.0.0-rc.5.zip
@@ -86,7 +87,7 @@ ln -sf $HOME/data/dotfiles/configs/tmux.conf .tmux.conf
 ln -sf $HOME/data/dotfiles/configs/zshrc .zshrc
 ln -sf $HOME/data/dotfiles/configs/agignore .agignore
 ln -sf $HOME/data/dotfiles/configs/Xmodmap .Xmodmap
-ln -sf $HOME/data/dotfiles/vimrc/devel_vimrc .vimrc
+ln -sf $HOME/data/dotfiles/vimrc/modes/devel.vimrc .vimrc
 
 # i3 config files
 mkdir -p .config/i3
