@@ -149,6 +149,9 @@ sudo dnf install -y zathura
 sudo dnf install -y zathura-pdf-mupdf
 sudo dnf install -y xdotool
 
+# Inkscape
+sudo dnf install -y inkscape
+
 # i3 Configuration
 sudo dnf install -y i3 i3status dmenu i3lock xbacklight feh conky
 sudo dnf install -y pasystray
