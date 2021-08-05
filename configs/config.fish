@@ -1,5 +1,18 @@
-#!/bin/bash
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
+
 source ~/.environment
+
+fish_vi_key_bindings
+
+bind --mode default \cp history-search-backward
+bind --mode default \cn history-search-forward
+
+bind --mode insert \cp history-search-backward
+bind --mode insert \cn history-search-forward
+
+bind --mode insert \b backward-kill-bigword
 
 alias vim=vimx
 alias vimv="vimx -u ~/data/dotfiles/vimrc/vanilla/common.vimrc"
@@ -15,15 +28,15 @@ alias vim_light="echo light > ~/._background"
 alias vim_dark="echo dark > ~/._background"
 
 # Backgroun env var for vim
-if [[ -a ~/._background ]]; then
-  export BACKGROUND=$(cat ~/._background)
+if test -f ~/._background
+  set -x BACKGROUND (cat ~/._background)
 else
-  export BACKGROUND=dark
-fi
+  set -x BACKGROUND "dark"
+end
 
-if [[ "$BACKGROUND" == 'light' ]]; then
-  export LS_COLORS=${LS_COLORS}:'ln=7;35'
-fi
+if [ "$BACKGROUND" = 'light' ]
+  set -x LS_COLORS {$LS_COLORS}:'ln=7;35'
+end
 
 alias watch="watch "
 
@@ -41,14 +54,15 @@ alias kdesd="kubectl describe deployment"
 alias kdess="kubectl describe service"
 
 
-function _install_nvm() {
+function _install_nvm
   # NVM settings
-  export NVM_DIR="$HOME/.config/nvm"
+  set -x NVM_DIR "$HOME/.config/nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-}
+end
 
 #
 # Not to be disturbed by Ctrl-S ctrl-Q in terminals:
 stty -ixon
+
 

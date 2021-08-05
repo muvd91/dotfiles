@@ -64,10 +64,19 @@ sudo dnf -y install vim-X11
 # The silver searcher
 sudo dnf -y install the_silver_searcher
 
-# Zsh
+# Shells
+
+# Fish and OhMyFish
+sudo dnf -y install fish
+curl -L https://get.oh-my.fish | fish
+
+# Zsh and OhMyZsh
 sudo dnf -y install zsh
-sudo usermod --shell /bin/zsh $USER
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+
+# Set your user shell
+sudo usermod --shell /bin/<shell> $USER
 
 # FZF
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
