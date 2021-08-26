@@ -74,6 +74,10 @@ curl -L https://get.oh-my.fish | fish
 sudo dnf -y install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# OhMyBash
+sh -c "$(curl -fsSL https://raw.github.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+ln -sf $HOME/data/dotfiles/configs/oh-my-bash .bashrc
+
 
 # Set your user shell
 sudo usermod --shell /bin/<shell> $USER
