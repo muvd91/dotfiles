@@ -1,6 +1,6 @@
 
 " General settings
-colorscheme peachpuff
+colorscheme koehler
 set nocompatible
 set backspace=eol,indent,start
 set number
@@ -28,17 +28,20 @@ set list
 
 set wildmenu
 
-highlight Search ctermfg=255 ctermbg=8
-highlight IncSearch ctermfg=255 ctermbg=8 cterm=bold
-highlight StatusLine ctermbg=255 ctermfg=10
-highlight Visual ctermfg=10 ctermbg=255
+highlight Pmenu ctermfg=255 ctermbg=94
+highlight PmenuSel cterm=bold ctermbg=255 ctermfg=0
+highlight Search cterm=bold ctermfg=255 ctermbg=94
+highlight IncSearch cterm=bold ctermfg=255 ctermbg=94
+highlight StatusLine ctermfg=255 ctermbg=53
+highlight Visual cterm=none ctermfg=255 ctermbg=22
+highlight MatchParen cterm=none ctermbg=13 ctermfg=255
 
 " C Filetype configuration
 autocmd FileType make set noexpandtab
 autocmd FileType c set errorformat=%f:%l:%c:%m,%-G%.%#
 autocmd FileType c set path+=**
 autocmd Filetype c set colorcolumn=100
-autocmd Filetype c highlight ColorColumn ctermbg=10
+autocmd Filetype c highlight ColorColumn ctermbg=22
 
 " Mappings
 let mapleader="\<SPACE>"
