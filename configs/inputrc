@@ -13,4 +13,10 @@ Control-l: clear-screen
 Control-p: previous-history
 Control-n: next-history
 Control-h: backward-kill-word
+
+TAB:menu-complete
+set show-all-if-ambiguous on
+set colored-completion-prefix on
+set colored-stats on
+
 $endif
