@@ -13,7 +13,8 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plugg  'rakr/vim-one', {'config': 'colorschemes/vim-one.vimrc'}
+" Plugg  'rakr/vim-one', {'config': 'colorschemes/vim-one.vimrc'}
+Plugg  'morhetz/gruvbox', {'config': 'colorschemes/gruvbox.vimrc'}
 
 Plugg  'airblade/vim-gitgutter'
 Plugg  'tpope/vim-fugitive'
