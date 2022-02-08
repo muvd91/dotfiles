@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Name=IntelliJ IDEA
+Exec=/usr/local/software/idea-IC-212.5457.46/bin/idea.sh
+Icon=/usr/local/software/idea-IC-212.5457.46/bin/idea.png
+Terminal=false
+Type=Application

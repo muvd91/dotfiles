@@ -102,6 +102,11 @@ ln -sf $HOME/data/dotfiles/configs/agignore .agignore
 ln -sf $HOME/data/dotfiles/configs/Xmodmap .Xmodmap
 ln -sf $HOME/data/dotfiles/vimrc/modes/devel.vimrc .vimrc
 
+ln -sf $HOME/data/dotfiles/gnome/android-studio.desktop .local/share/applications
+ln -sf $HOME/data/dotfiles/gnome/firefox-private.desktop .local/share/applications
+ln -sf $HOME/data/dotfiles/gnome/intellij.desktop .local/share/applications
+ln -sf $HOME/data/dotfiles/gnome/pycharm.desktop .local/share/applications
+
 # i3 config files
 mkdir -p .config/i3
 mkdir -p .config/rofi
