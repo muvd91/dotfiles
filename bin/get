@@ -1,0 +1,4 @@
+#!/bin/bash
+val=$(cat ~/._values | grep -w $1 | cut -d':' -f2 | tr -d '\n')
+test -z $val && exit 1
+echo -n $val | xclip -selection clipboard
