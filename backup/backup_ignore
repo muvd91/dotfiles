@@ -1,0 +1,9 @@
+scratch
+__pycache__
+dotfiles
+projects
+.git
+.settings
+.idea
+.project
+*.out
