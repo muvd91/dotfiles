@@ -52,10 +52,14 @@ nnoremap <leader>d :bp\|bd #<CR>
 nnoremap <leader>l :ls<CR>:b<Space>
 nnoremap <leader>su :s/
 nnoremap <C-p> :edit **/
+nnoremap <C-n> :Explore<CR>
 
 " Terminal mappings
 tnoremap <ESC> <C-W>N
 tnoremap kj <C-W>N
+function Terminal()
+    :below terminal ++rows=20
+endfunction
 
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "<C-k>"
