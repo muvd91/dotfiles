@@ -1,5 +1,4 @@
 #!/bin/bash
-source ~/.environment
 
 alias vim=vimx
 alias vimv="vimx -u ~/data/dotfiles/vimrc/vanilla/common.vimrc"
