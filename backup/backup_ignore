@@ -2,8 +2,12 @@ scratch
 __pycache__
 dotfiles
 projects
+venv
 .git
 .settings
 .idea
 .project
 *.out
+*.swp
+*.swo
+*.iso
