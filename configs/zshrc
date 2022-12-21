@@ -98,7 +98,6 @@ bindkey "${terminfo[kend]}" end-of-line
 bindkey '^[[Z' reverse-menu-complete
 
 source ~/.commonrc
-source ~/.environment
 
 # User configuration
 

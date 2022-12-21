@@ -6,6 +6,7 @@ export INSTALL_BIN=${INSTALL_DIR}/bin
 export LOMBOK_PATH=${HOME}/bin/lombok.jar
 export JAVA_HOME=/usr/lib/jvm/java-openjdk
 export MAVEN_HOME=${INSTALL_DIR}/apache-maven-3.8.6
+export GRADLE_HOME=${INSTALL_DIR}/gradle-7.5.1
 export HISTCONTROL=ignoredups:erasedups
 export XDG_CONFIG_HOME=${HOME}/.config
 
@@ -15,5 +16,6 @@ ${HOME}/bin:\
 /usr/local/software/bin:\
 ${JAVA_HOME}/bin:\
 ${MAVEN_HOME}/bin:\
+${GRADLE_HOME}/bin:\
 ${PATH}"
 
