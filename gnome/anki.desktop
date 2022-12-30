@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Name=Anki
+Exec=/usr/local/software/anki-qt6/anki
+Icon=/usr/local/software/anki-qt6/anki.png
+Terminal=false
+Type=Application
