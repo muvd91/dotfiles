@@ -4,8 +4,8 @@ filetype plugin on
 syntax on
 
 let s:my_wikis =
-\['~/Documents/VimWiki/MyWiki.wiki',
-\ '~/Documents/VimWiki/Oracle.wiki']
+\['~/Documents/Wiki/MyWiki.wiki',
+\ '~/Documents/Wiki/Oracle.wiki']
 
 " VimWiki stuff
 let g:vimwiki_list = []
