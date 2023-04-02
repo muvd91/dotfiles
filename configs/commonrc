@@ -10,6 +10,11 @@ alias vimpy="vimx \`mktemp\`.py"
 alias vimkts="vimx \`mktemp -u\`.kts"
 alias ronotes="vimx -R -u ~/data/dotfiles/vimrc/modes/wiki.vimrc"
 
+alias nvimtex="nvim -u ~/data/dotfiles/nvim/modes/tex.vim"
+alias nvimmd="nvim -u ~/data/dotfiles/nvim/modes/markdown.vim"
+alias nvimpy="nvim \`mktemp\`.py"
+alias nvimkts="nvim \`mktemp -u\`.kts"
+
 alias vim_light="echo light > ~/._background"
 alias vim_dark="echo dark > ~/._background"
 
