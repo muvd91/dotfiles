@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Name=PyCharm
-Exec=/usr/local/software/pycharm-community-2020.1.2/bin/pycharm.sh
-Icon=/usr/local/software/pycharm-community-2020.1.2/bin/pycharm.png
+Exec=/usr/local/software/pycharm-community-2023.1/bin/pycharm.sh
+Icon=/usr/local/software/pycharm-community-2023.1/bin/pycharm.png
 Terminal=false
 Type=Application
