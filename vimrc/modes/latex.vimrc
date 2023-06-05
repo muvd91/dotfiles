@@ -13,7 +13,12 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plugg  'rakr/vim-one', {'config': 'colorschemes/vim-one.vimrc'}
+" Colorscheme
+Plug  'EdenEast/nightfox.nvim'
+" Plugg  'rakr/vim-one', {'config': 'colorschemes/vim-one.vimrc'}
+
+" Conqueror of Completion
+Plugg 'neoclide/coc.nvim', {'branch': 'release', 'config': 'coc.vimrc'}
 
 Plugg 'lervag/vimtex', {'config': 'vimtex.vimrc'}
 Plugg  'airblade/vim-gitgutter'
@@ -25,16 +30,16 @@ Plugg  'tpope/vim-unimpaired'
 Plugg  'tpope/vim-commentary'
 Plugg  'tpope/vim-repeat'
 Plugg  'Raimondi/delimitMate', {'config': 'delimitMate.vimrc'}
-Plugg  'majutsushi/tagbar', {'config': 'tagbar.vimrc'}
 Plugg  'scrooloose/nerdtree', {'config': 'nerdtree.vimrc'}
 Plugg  'ctrlpvim/ctrlp.vim', {'config': 'ctrlp.vimrc'}
 Plugg  'vim-airline/vim-airline', {'config': 'vim-airline.vimrc'}
 Plugg  'vim-airline/vim-airline-themes'
 Plugg  'SirVer/ultisnips', {'config': 'ultisnips.vimrc'}
 Plugg  'honza/vim-snippets'
-Plugg  'ycm-core/YouCompleteMe', {'config': 'YouCompleteMe.vimrc'}
 
 " Initialize plugin system
 call plug#end()
 doautocmd User PlugFinished
+
+colorscheme nightfox
 
