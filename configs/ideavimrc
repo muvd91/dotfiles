@@ -3,3 +3,4 @@ inoremap kj <Esc>
 
 nnoremap [b :bnext<CR>
 nnoremap ]b :bprevious<CR>
+set clipboard+=unnamed
