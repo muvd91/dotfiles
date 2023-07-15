@@ -27,6 +27,7 @@ Plugg  'tpope/vim-unimpaired'
 Plugg  'tpope/vim-commentary'
 Plugg  'tpope/vim-markdown'
 Plugg  'tpope/vim-repeat'
+Plugg  'tpope/vim-fireplace'
 Plugg  'Raimondi/delimitMate', {'config': 'delimitMate.vimrc'}
 Plugg  'scrooloose/nerdtree', {'config': 'nerdtree.vimrc'}
 Plugg  'ctrlpvim/ctrlp.vim', {'config': 'ctrlp.vimrc'}
