@@ -11,3 +11,5 @@ venv
 *.swp
 *.swo
 *.iso
+build/
+target/
