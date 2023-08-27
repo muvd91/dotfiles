@@ -2,11 +2,12 @@
 
 export INSTALL_DIR=/usr/local/software
 export INSTALL_BIN=${INSTALL_DIR}/bin
+export SDKMAN_CANDIDATES=${HOME}/.sdkman/candidates
 
 export LOMBOK_PATH=${HOME}/bin/lombok.jar
-export JAVA_HOME=/usr/lib/jvm/java-openjdk
-export MAVEN_HOME=${INSTALL_DIR}/apache-maven-3.8.6
-export GRADLE_HOME=${INSTALL_DIR}/gradle-7.5.1
+export JAVA_HOME=${SDKMAN_CANDIDATES}/java/current
+export MAVEN_HOME=${SDKMAN_CANDIDATES}/maven/current
+export GRADLE_HOME=${SDKMAN_CANDIDATES}/gradle/current
 export HISTCONTROL=ignoredups:erasedups
 export XDG_CONFIG_HOME=${HOME}/.config
 
