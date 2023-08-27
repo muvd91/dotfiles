@@ -1,5 +1,5 @@
 #!/bin/bash
-VOL_NAME=p_backup
+VOL_NAME=personal_backup
 DESTINATION=/run/media/${USER}/${VOL_NAME}/$(date +%d-%B-%Y)
 EXCLUDE_FILE="backup_ignore"
 
