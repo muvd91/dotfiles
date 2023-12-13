@@ -15,7 +15,7 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-if $BACKGROUND == 'light' || has("gui_running")
+if $BACKGROUND == 'light'
   set background=light
 elseif $BACKGROUND == 'dark'
   set background=dark

@@ -161,10 +161,10 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 inoremap <expr> <C-j>
    \ coc#pum#visible() ? coc#pum#next(1) :
-   \ "\<C-J>"
+   \ pumvisible() ? "\<C-n>" : "<C-j>"
 inoremap <expr> <C-k>
    \ coc#pum#visible() ? coc#pum#prev(1) :
-   \ "\<C-K>"
+   \ pumvisible() ? "\<C-p>" : "<C-k>"
 
 let g:coc_snippet_next = '<Tab>'
 let g:coc_snippet_prev = '<S-Tab>'
