@@ -54,6 +54,10 @@ nnoremap <C-e> 2<C-e>
 tnoremap <ESC> <C-W>N
 tnoremap kj <C-W>N
 
+" menu navigation with <C-j> <C-k>
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "<C-k>"
+
 " Search highlight
 set incsearch
 set hlsearch
