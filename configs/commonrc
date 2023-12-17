@@ -3,10 +3,10 @@
 alias notes="vimx -u ~/data/dotfiles/vimrc/modes/wiki.vimrc"
 alias ronotes="vimx -R -u ~/data/dotfiles/vimrc/modes/wiki.vimrc"
 
-alias vim=vimx
+alias vim="_install_nvm && vimx"
 alias vimv="vimx -u ~/data/dotfiles/vimrc/vanilla/common.vimrc"
 alias vimuml="vimx -u ~/data/dotfiles/vimrc/modes/plantuml.vimrc"
-alias vimlatex="vimx -u ~/data/dotfiles/vimrc/modes/latex.vimrc"
+alias vimlatex="_install_nvm && vimx -u ~/data/dotfiles/vimrc/modes/latex.vimrc"
 alias vimmd="vimx -u ~/data/dotfiles/vimrc/modes/markdown.vimrc"
 
 alias vimpy="vimx \`mktemp\`.py"
