@@ -7,9 +7,14 @@ venv
 .settings
 .idea
 .project
+.gradle
 *.out
 *.swp
 *.swo
 *.iso
+*.classpath
+*.clj-kondo
+*.lsp
+*.lein*
 build/
 target/

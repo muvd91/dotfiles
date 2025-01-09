@@ -7,6 +7,7 @@ rsync --archive --verbose --human-readable --progress ${HOME}/Documents ${DESTIN
 rsync --archive --verbose --human-readable --progress ${HOME}/Music ${DESTINATION} --exclude-from ${EXCLUDE_FILE}
 rsync --archive --verbose --human-readable --progress ${HOME}/Pictures ${DESTINATION} --exclude-from ${EXCLUDE_FILE}
 rsync --archive --verbose --human-readable --progress ${HOME}/Downloads ${DESTINATION} --exclude-from ${EXCLUDE_FILE}
+rsync --archive --verbose --human-readable --progress ${HOME}/Templates ${DESTINATION} --exclude-from ${EXCLUDE_FILE}
 
 rsync --archive --verbose --human-readable --progress ${HOME}/data ${DESTINATION} --exclude-from ${EXCLUDE_FILE}
-rsync --archive --verbose --human-readable --progress ${HOME}/._values ${DESTINATION}/_values --exclude-from ${EXCLUDE_FILE}
+rsync --archive --verbose --human-readable --progress ${HOME}/._values ${DESTINATION}/_values
