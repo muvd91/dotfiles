@@ -28,6 +28,9 @@ Plugg  'tpope/vim-commentary'
 Plugg  'tpope/vim-markdown'
 Plugg  'tpope/vim-repeat'
 Plugg  'tpope/vim-fireplace'
+Plugg  'tpope/vim-sexp-mappings-for-regular-people'
+Plugg  'guns/vim-sexp'
+
 Plugg  'Raimondi/delimitMate', {'config': 'delimitMate.vimrc'}
 Plugg  'scrooloose/nerdtree', {'config': 'nerdtree.vimrc'}
 Plugg  'ctrlpvim/ctrlp.vim', {'config': 'ctrlp.vimrc'}
