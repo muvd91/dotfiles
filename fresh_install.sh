@@ -97,7 +97,7 @@ ln -sf $HOME/data/dotfiles/configs/bashrc .bashrc
 ln -sf $HOME/data/dotfiles/configs/commonrc .commonrc
 ln -sf $HOME/data/dotfiles/configs/inputrc .inputrc
 ln -sf $HOME/data/dotfiles/configs/tmux.conf .tmux.conf
-ln -sf $HOME/data/dotfiles/configs/zshrc .zshrc
+ln -sf $HOME/data/dotfiles/configs/oh-my-zsh .zshrc
 ln -sf $HOME/data/dotfiles/configs/agignore .agignore
 ln -sf $HOME/data/dotfiles/configs/Xmodmap .Xmodmap
 ln -sf $HOME/data/dotfiles/vimrc/modes/devel.vimrc .vimrc
