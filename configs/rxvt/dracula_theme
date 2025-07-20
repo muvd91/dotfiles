@@ -1,7 +1,8 @@
 urxvt.perl-ext-common: default,tabbed,matcher,resize-font,-tabbed
 
 !! URxvt Appearance
-URxvt*font: xft:Liberation\ Mono\ for\ Powerline:pixelsize=14:minspace=False
+! URxvt*font: xft:Liberation\ Mono\ for\ Powerline:pixelsize=14:minspace=False
+URxvt.font: xft:SauceCodeProNerdFont-Medium:pixelsize=13
 !URxvt*font: xft:DejaVu\ Sans\ Mono\ for\ Powerline:pixelsize=14:minspace=False
 !URxvt*boldFont: xft:Liberation\ Mono\ for\ Powerline\ Bold:pixelsize=14:minspace=False
 !URxvt*italicFont: xft:Liberation\ Mono\ for\ Powerline\ Italic:pixelsize=15:minspace=False
