@@ -10,6 +10,7 @@ zip -r backup.zip \
     ${HOME}/Downloads \
     ${HOME}/Templates \
     ${HOME}/data \
+    ${HOME}/.ssh \
     ${HOME}/._values \
     --exclude @${EXCLUDE_FILE}
 
