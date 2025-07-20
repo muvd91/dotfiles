@@ -2,6 +2,7 @@
 *__pycache__*
 *dotfiles*
 *projects*
+*git*
 *venv*
 *.git*
 *.settings*
