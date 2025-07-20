@@ -139,9 +139,9 @@ source ~/.commonrc
 
 # Syntax highlighting
 # See https://github.com/catppuccin/zsh-syntax-highlighting
-source /home/demunoz/data/git/zsh/themes/zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
+source /home/$USER/data/git/zsh/themes/zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 # See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
-source /home/demunoz/data/git/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
+source /home/$USER/data/git/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
