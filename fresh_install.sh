@@ -6,9 +6,6 @@ cd
 THEMES=~/local/fonts-and-themes
 FONTS_DIR=~/.local/share/fonts
 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-git clone https://github.com/catppuccin/zsh-syntax-highlighting.git
-
 # Gnome Tweak Tools
 sudo dnf -y install gnome-tweaks
 
@@ -91,6 +88,8 @@ curl -L https://get.oh-my.fish | fish
 #   Zsh and OhMyZsh
 sudo dnf -y install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://github.com/catppuccin/zsh-syntax-highlighting.git
 #   OhMyBash
 sh -c "$(curl -fsSL https://raw.github.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 ln -sf $HOME/data/dotfiles/configs/oh-my-bash .bashrc
@@ -116,6 +115,7 @@ ln -sf $HOME/data/dotfiles/configs/inputrc .inputrc
 ln -sf $HOME/data/dotfiles/configs/tmux.conf .tmux.conf
 ln -sf $HOME/data/dotfiles/configs/agignore .agignore
 ln -sf $HOME/data/dotfiles/configs/Xmodmap .Xmodmap
+ln -sf $HOME/data/dotfiles/nvim .config/nvim
 ln -sf $HOME/data/dotfiles/vimrc/modes/devel.vimrc .vimrc
 
 ln -sf $HOME/data/dotfiles/gnome/android-studio.desktop .local/share/applications
