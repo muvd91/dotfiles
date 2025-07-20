@@ -1,6 +1,6 @@
 #!/bin/bash
 VOL_NAME=personal_backup
-DESTINATION=/run/media/${USER}/${VOL_NAME}/$(date +%d-%B-%Y)
+DESTINATION=/run/media/${USER}/${VOL_NAME}/$(hostnamectl --static)/$(date +%d-%B-%Y)
 EXCLUDE_FILE="backupignore"
 
 zip -r backup.zip \
@@ -14,7 +14,7 @@ zip -r backup.zip \
     ${HOME}/._values \
     --exclude @${EXCLUDE_FILE}
 
-rsync --archive --verbose --human-readable --progress backup.zip ${DESTINATION}.zip
+rsync --archive --mkpath --verbose --human-readable --progress backup.zip ${DESTINATION}.zip
 echo "Sync... may take a while."
 sync
 # monitor disk transfer
