@@ -99,15 +99,21 @@ sudo usermod --shell /bin/<shell> $USER
 
 # Config files
 cd
+#  General
 ln -sf $HOME/data/dotfiles/configs/profile .profile
 ln -sf $HOME/data/dotfiles/configs/environment .environment
+ln -sf $HOME/data/dotfiles/configs/commonrc .commonrc
+#  bash
+ln -sf $HOME/data/dotfiles/configs/bash/bashrc .bashrc
+ln -sf $HOME/data/dotfiles/configs/bash/bash_profile .bash_profile
+#  zsh
+ln -sf $HOME/data/dotfiles/configs/zsh/oh-my-zsh .zshrc
+ln -sf $HOME/data/dotfiles/configs/zsh/zprofile .zprofile
+
 ln -sf $HOME/data/dotfiles/configs/fzffn.sh .fzffn
 ln -sf $HOME/data/dotfiles/configs/gitconfig .gitconfig
-ln -sf $HOME/data/dotfiles/configs/bashrc .bashrc
-ln -sf $HOME/data/dotfiles/configs/commonrc .commonrc
 ln -sf $HOME/data/dotfiles/configs/inputrc .inputrc
 ln -sf $HOME/data/dotfiles/configs/tmux.conf .tmux.conf
-ln -sf $HOME/data/dotfiles/configs/oh-my-zsh .zshrc
 ln -sf $HOME/data/dotfiles/configs/agignore .agignore
 ln -sf $HOME/data/dotfiles/configs/Xmodmap .Xmodmap
 ln -sf $HOME/data/dotfiles/vimrc/modes/devel.vimrc .vimrc
@@ -125,7 +131,6 @@ ln -sf $HOME/data/dotfiles/configs/i3/rofi/config.rasi ~/.config/rofi/config.ras
 ln -sf $HOME/data/dotfiles/configs/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
 
 ## Uncategorized
-
 # i3 Configuration
 sudo dnf install -y i3 i3status dmenu i3lock xbacklight feh conky
 sudo dnf install -y pasystray
