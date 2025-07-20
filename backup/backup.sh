@@ -17,3 +17,5 @@ zip -r backup.zip \
 rsync --archive --verbose --human-readable --progress backup.zip ${DESTINATION}.zip
 echo "Sync... may take a while."
 sync
+# monitor disk transfer
+# watch grep -i dirty /proc/meminfo
