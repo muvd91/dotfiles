@@ -17,7 +17,7 @@ sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
 
 # Fonts
 #   SauceCodeProNerdFont
-git clone https://github.com/ryanoasis/nerd-fonts/releases/latest/download/SourceCodePro.zip
+wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/SourceCodePro.zip
 #   FontAwesome
 git clone https://github.com/FortAwesome/Font-Awesome.git
 #   YosemiteSanFranciscoFont
@@ -56,7 +56,9 @@ sudo dnf -y install the_silver_searcher
 sudo dnf -y install xclip
 #   Zathura
 sudo dnf install -y zathura
+#     Install only one of the PDF pluginsZathura
 sudo dnf install -y zathura-pdf-mupdf
+sudo dnf install -y zathura-pdf-poppler
 sudo dnf install -y xdotool
 #   VLC
 sudo dnf -y install vlc
