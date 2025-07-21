@@ -2,7 +2,7 @@
 	email = david.muv91@gmail.com
 	name = David Munoz
 [core]
-	editor = vim
+	editor = nvim
 [alias]
 	st = status
 	co = checkout
