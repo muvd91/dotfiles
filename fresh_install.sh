@@ -59,6 +59,8 @@ sudo dnf install -y zathura
 #     Install only one of the PDF pluginsZathura
 sudo dnf install -y zathura-pdf-mupdf
 sudo dnf install -y zathura-pdf-poppler
+#   vimtex compiler 
+sudo dnf install -y latexmk
 sudo dnf install -y xdotool
 #   VLC
 sudo dnf -y install vlc
@@ -131,6 +133,12 @@ mkdir -p .config/rofi
 ln -sf $HOME/data/dotfiles/configs/i3/i3config ~/.config/i3/config
 ln -sf $HOME/data/dotfiles/configs/i3/rofi/config.rasi ~/.config/rofi/config.rasi
 ln -sf $HOME/data/dotfiles/configs/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
+
+# Fractal PC 
+# rebuild akmods 
+sudo akmods --force --rebuild
+# if LUKS used, then nvidia drivers might need to be available in the image
+sudo dracut -fvv --add-drivers " nvidia nvidia-drm nvidia-modeset nvidia-uvm "
 
 ## Uncategorized
 # i3 Configuration
