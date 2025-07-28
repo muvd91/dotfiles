@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -regex '.*\(\.log\|\.dvi\|\.aux\|\.fdb_latexmk\|\.fls\|\.synctex.gz\)' -exec rm {} \;
+find . -type f -regex '.*\(\.log\|\.dvi\|\.aux\|\.fdb_latexmk\|\.fls\|\.synctex.gz\|\.toc\)' -exec rm {} \;
