@@ -1,5 +1,6 @@
 local function lsp_init()
-	require'lspconfig'.clangd.setup{}
+	-- require'lspconfig'.clangd.setup{}
+  vim.lsp.enable('clangd')
 end
 
 return {
