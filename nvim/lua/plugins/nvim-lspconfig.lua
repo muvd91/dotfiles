@@ -1,6 +1,7 @@
 local function lsp_init()
 	-- require'lspconfig'.clangd.setup{}
   vim.lsp.enable('clangd')
+  vim.lsp.enable('clojure_lsp')
 end
 
 return {

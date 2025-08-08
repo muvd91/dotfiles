@@ -11,3 +11,4 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.clipboard = "unnamedplus"
 
+vim.keymap.set('n', '<Leader>n', '<cmd>nohlsearch<cr>')
